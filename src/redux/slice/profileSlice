@@ -1,0 +1,44 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+    profiles: [
+    {
+    profileName: "About there product",
+    profileDescription: "The description for this hat can be found in two places on the product page: below the price and below the main product information panel.The description includes details about the hat trendiness, as well as specifications such as measurements and materials.",
+    },
+    {
+    profileName: "Benefits",
+    profileDescription: "A product benefit is the positive outcome or value that a customer receives from using a product or service. They are the reasons why customers buy products, and they are typically communicated through marketing messages and product descriptions.",
+    },
+    {
+    profileName: "Recent Company news",
+    profileDescription: "The manager is retiring by next week so we will be given him a farewell... Yall must be present",
+    },
+    {
+    profileName: "Culture",
+    profileDescription: "You must always wear native attired during the weekend",
+    },
+    {
+    profileName: "Organization",
+    profileDescription: "A product organization is a type of company structure in which a business is built around specific products, with dedicated teams, workflows, and objectives for each.",
+    },
+    {
+    profileName: "Work hours",
+    profileDescription: "Monday - Friday, 8-10",
+    },
+    {
+    profileName: "Salary",
+    profileDescription: "$20,000",
+    },
+    ],
+    
+};
+
+
+const profileSlice = createSlice({
+    name: "profile",
+    initialState,
+    reducers: {},
+  });
+  
+  export default profileSlice.reducer;

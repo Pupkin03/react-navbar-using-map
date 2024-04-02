@@ -1,0 +1,41 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  contacts : [
+    {
+        name: "John Doe",
+        role: "Manager",
+        image: "https://www.bing.com/images/search?q=people+with+disabilities&id=FDD3F0E30A0012E6C432C2772214FCE90D40965A&FORM=IVCLIG"
+    },
+    {
+        name: "Jane Smith",
+        role: "Manager",
+        image: "https://th.bing.com/th/id/OIP.WOAWEg2ZZiW6-39qNsDDzQHaLG?w=125&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    }
+],
+secretary: {
+    name: "Alice Johnson",
+    role: "Secretary",
+    image: "https://th.bing.com/th/id/OIP.MjWO4LVB_3Q_cvoRKWTwQgAAAA?w=214&h=161&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+},
+others: [
+    {
+        name: "Michael Brown",
+        role: "Sales Representative",
+        image: "https://th.bing.com/th?q=Pretty+People&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-WW&cc=NG&setlang=en&adlt=moderate&t=1&mw=247"
+    },
+    {
+        name: "Emily Wilson",
+        role: "Accountant",
+        image: "https://th.bing.com/th/id/OIF.OUfWKEGttJO6VAcHjtSeaw?w=276&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    }
+]
+};
+
+const contactSlice = createSlice({
+  name: "contact",
+  initialState,
+  reducers: {},
+});
+
+export default contactSlice.reducer;

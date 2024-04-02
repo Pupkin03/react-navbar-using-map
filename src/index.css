@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pack{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.topack{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+
+
+
