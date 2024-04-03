@@ -1,15 +1,20 @@
 import { useSelector } from "react-redux";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router-dom";
 
 
-const profileInfo = () => {
+
+const ProfileInfo = () => {
 
 
-  const { jobId } = useParams();
-  const navigate = useNavigate();
-  const profiles = useSelector((state) => state.profile.profiles);
+    const { profileId } = useParams();
+    console.log(profileId)
+    const navigate = useNavigate();
+    const profiles = useSelector((state) => state.profile.profiles);
+    console.log(profiles)
 
-  const jobProfiles = profiles.find((profile) => profile.profileName === jobId);
+    const jobProfiles = profiles.find((profile) => profile.profileName === profileId);
+
+    console.log(jobProfiles, "jobss")
 
 
 
@@ -43,4 +48,4 @@ const profileInfo = () => {
   );
 };
 
-export default profileInfo;
+export default ProfileInfo;

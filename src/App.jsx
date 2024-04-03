@@ -3,14 +3,16 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import { Route, Routes } from "react-router";
-import Navbar from "./Component.jsx/Navbar";
-import Home from "./Component.jsx/Home";
-import About from "./Component.jsx/About";
-import Services from "./Component.jsx/Services";
-import Career from "./Component.jsx/Career";
-import PreviewJob from "./Component.jsx/PreviewJob";
-import Contact from "./Component.jsx/Contact";
-import Profile from "./Component.jsx/Profile";
+import Navbar from "./component/Navbar";
+import Home from "./component/Home";
+import About from "./component/About";
+import Services from "./component/Services";
+import Career from "./component/Career";
+import PreviewJob from "./component/PreviewJob";
+import Contact from "./component/Contact";
+import Profile from "./component/Profile";
+import ProfileInfo from "./component/ProfileInfo";
+
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           {/* the jobId beneath indicates a dynamic route to preview each job 
           shown on career page, it can be destructured in the preview folder using the useParams hook */}
           <Route path="/career/preview-job/:jobId" element={<PreviewJob />} />
+          <Route path="/profile/profileInfo/:profileId" element={<ProfileInfo/>}/>
         </Routes>
       </div>
     </>
